@@ -1,0 +1,19 @@
+<turns>
+  <interval begin="0" end="3600">
+
+    <!-- Chestnut St & 4th Ave-->
+    <!-- from North-4th Ave(Southbound)-->
+    <edgeRelation from="48729817#0" to="48729817#2"  count="467"/>
+    <edgeRelation from="48729817#0" to="19444757#7"  count="212"/>
+    <edgeRelation from="48729817#0" to="-19444757#6"  count="128"/>
+   
+    <!-- from East- Chestnut St (Westbound)-->
+    <edgeRelation from="19444757#5" to="19444757#7"  count="192"/>
+    <edgeRelation from="19444757#5" to="48729817#2"  count="44"/>
+ 
+    <!-- from West- Chestnut (Eastbound)-->
+    <edgeRelation from="-19444757#8" to="-19444757#6"  count="117"/>
+    <edgeRelation from="-19444757#8" to="48729817#2"  count="26"/>
+
+     </interval>
+</turns>

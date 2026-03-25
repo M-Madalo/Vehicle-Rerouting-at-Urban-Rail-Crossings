@@ -1,0 +1,4 @@
+scenario,B,C,D
+baseline,0,0,20
+naive,0,0,20
+rerouting,5,15,0

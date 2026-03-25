@@ -1,0 +1,1 @@
+python run_rerouting_analysis.py --seeds 1001,1002
