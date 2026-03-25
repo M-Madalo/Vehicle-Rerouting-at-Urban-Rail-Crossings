@@ -153,6 +153,10 @@ So **blocking/unblocking in the graph is centralized in the Dijkstra instance**;
 | **`enhanced_dijkstra.py`** | Graph from net.xml, path calculation, blocking, congestion, train-crossing registration. |
 | **`sumo_controller.py`** | TraCI simulation control, network init from TraCI, train/crossing detection, reroute decisions, application of routes, metrics. |
 | **`run_rerouting_analysis.py`** | Creates Dijkstra from `4thAve.net.xml`, creates controller with rerouting on, runs simulation, collects metrics and LOS, generates visuals. |
+| **`run_no_train_analysis.py`** | from `4thAve.net.xml`, runs simulation without train, collects metrics and LOS, generates visuals. |
+| **`run_baseline_analysis.py`** | from `4thAve.net.xml`, introduces both freight trains with rerouting disabled. Vehicles encountering blocked crossings queue until the train clears, representing current conditions with no advance guidance, runs simulation, collects metrics and LOS, generates visuals. |
+| **`run_naive_rerouting_analysis.py`** | from `4thAve.net.xml`,implements a proximity-based rerouting strategy to evaluate whether simple spatial awareness can mitigate crossing delays, collects metrics and LOS, generates visuals. |
+| **`run_unified_analysis.py`** | from `4thAve.net.xml`,implements 4 scenarios no trains - baseline with train - naive rerouting - intelligent rerouting  with 20 seeds , collects metrics and LOS, generates visuals. |
 | **`metrics_collector.py`** | Gathers and aggregates metrics from the controller. |
 | **`visualize_metrics.py`** | Plots (e.g. rerouting metrics, crossing impact, rerouting statistics). |
 
